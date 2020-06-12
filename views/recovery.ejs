@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- <link rel="stylesheet" type="text/css" href="/public/style.css" /> -->
+        <title>Recovery</title>
+    </head>
+ 
+    <body>
+
+        <h1>Mot-de-passe oublié ?</h1>
+
+        <p>Pour réinitialiser votre mot-de-passe veuillez renseigner votre nom d'utilisateur ou votre adresse email:</p>
+
+        <hr>
+        <br>
+       
+       <div class="message">
+           
+       </div>
+
+       <form method="post">
+                <input type="text" name="name" id="name" placeholder="Votre nom"/>
+                <input type="submit" value="Valider"/>
+            
+        </form>
+
+        <br>
+        <hr>
+        <br>
+
+        <form method="post">
+                <input type="email" name="email" id="email" placeholder="Votre Email"/>
+                <input type="submit" value="Valider"/>           
+        </form>
+
+        <br>
+        <hr>
+        <br>
+        <p id="errorMessage" style="color: red;"><%= errorMessage %></p>
+         <p>(Les adresses "Yahoo" ne fonctionnent pas avec ce service...)</p>
+    </body>
+</html>
